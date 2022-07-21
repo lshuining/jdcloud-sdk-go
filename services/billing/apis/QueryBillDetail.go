@@ -197,12 +197,12 @@ func (r *QueryBillDetailRequest) SetTags(tags []interface{}) {
 
 /* param pageIndex: pageIndex 分页,默认从1开始(Optional) */
 func (r *QueryBillDetailRequest) SetPageIndex(pageIndex int) {
-	r.PageIndex = &pageIndex
+	r.PageIndex = pageIndex
 }
 
 /* param pageSize: pageSize 每页查询数据条数,最多支持1000条(Optional) */
 func (r *QueryBillDetailRequest) SetPageSize(pageSize int) {
-	r.PageSize = &pageSize
+	r.PageSize = pageSize
 }
 
 // GetRegionId returns path parameter 'regionId' if exist,
