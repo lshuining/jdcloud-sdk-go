@@ -16,75 +16,74 @@
 
 package models
 
-
 type BillSummary struct {
 
-    /* 用户pin (Optional) */
-    Pin string `json:"pin"`
+	/* 用户pin (Optional) */
+	Pin string `json:"pin"`
 
-    /* 产品线代码 (Optional) */
-    AppCode string `json:"appCode"`
+	/* 产品线代码 (Optional) */
+	AppCode string `json:"appCode"`
 
-    /* 产品线代码名称 (Optional) */
-    AppCodeName string `json:"appCodeName"`
+	/* 产品线代码名称 (Optional) */
+	AppCodeName string `json:"appCodeName"`
 
-    /* 产品代码 (Optional) */
-    ServiceCode string `json:"serviceCode"`
+	/* 产品代码 (Optional) */
+	ServiceCode string `json:"serviceCode"`
 
-    /* 产品代码名称 (Optional) */
-    ServiceCodeName string `json:"serviceCodeName"`
+	/* 产品代码名称 (Optional) */
+	ServiceCodeName string `json:"serviceCodeName"`
 
-    /* 计费类型 (Optional) */
-    BillingType int `json:"billingType"`
+	/* 计费类型 (Optional) */
+	BillingType int `json:"billingType"`
 
-    /* 计费类型描述 (Optional) */
-    BillingTypeName string `json:"billingTypeName"`
+	/* 计费类型描述 (Optional) */
+	BillingTypeName string `json:"billingTypeName"`
 
-    /* 资源id (Optional) */
-    ResourceId string `json:"resourceId"`
+	/* 资源id (Optional) */
+	ResourceId string `json:"resourceId"`
 
-    /* 资源名称 (Optional) */
-    ResourceName string `json:"resourceName"`
+	/* 资源名称 (Optional) */
+	ResourceName string `json:"resourceName"`
 
-    /* 区域 (Optional) */
-    Region string `json:"region"`
+	/* 区域 (Optional) */
+	Region string `json:"region"`
 
-    /* 费用类型,仅用于查询帐单明细接口。取值:[新购、续费、配置变更、退订、按量费用] (Optional) */
-    ActionTypeName string `json:"actionTypeName"`
+	/* 费用类型,仅用于查询帐单明细接口。取值:[新购、续费、配置变更、退订、按量费用] (Optional) */
+	ActionTypeName string `json:"actionTypeName"`
 
-    /* 规格 (Optional) */
-    Formula string `json:"formula"`
+	/* 规格 (Optional) */
+	Formula string `json:"formula"`
 
-    /* 计费开始时间 (Optional) */
-    StartTime string `json:"startTime"`
+	/* 计费开始时间 (Optional) */
+	StartTime string `json:"startTime"`
 
-    /* 计费结束时间 (Optional) */
-    EndTime string `json:"endTime"`
+	/* 计费结束时间 (Optional) */
+	EndTime string `json:"endTime"`
 
-    /* 账单生成时间,仅用于查询帐单明细接口 (Optional) */
-    BillTime string `json:"billTime"`
+	/* 账单生成时间,仅用于查询帐单明细接口 (Optional) */
+	BillTime string `json:"billTime"`
 
-    /* 账单总额 (Optional) */
-    TotalFee int `json:"totalFee"`
+	/* 账单总额 (Optional) */
+	TotalFee float64 `json:"totalFee"`
 
-    /* 优惠金额 (Optional) */
-    DiscountFee int `json:"discountFee"`
+	/* 优惠金额 (Optional) */
+	DiscountFee float64 `json:"discountFee"`
 
-    /* 优惠后总价金额 (Optional) */
-    RealTotalFee int `json:"realTotalFee"`
+	/* 优惠后总价金额 (Optional) */
+	RealTotalFee float64 `json:"realTotalFee"`
 
-    /* 代金券支付金额 (Optional) */
-    CashCouponPayFee int `json:"cashCouponPayFee"`
+	/* 代金券支付金额 (Optional) */
+	CashCouponPayFee float64 `json:"cashCouponPayFee"`
 
-    /* 余额支付金额 (Optional) */
-    BalancePayFee int `json:"balancePayFee"`
+	/* 余额支付金额 (Optional) */
+	BalancePayFee float64 `json:"balancePayFee"`
 
-    /* 现金支付金额 (Optional) */
-    CashPayFee int `json:"cashPayFee"`
+	/* 现金支付金额 (Optional) */
+	CashPayFee float64 `json:"cashPayFee"`
 
-    /* 欠费金额 (Optional) */
-    ArrearFee int `json:"arrearFee"`
+	/* 欠费金额 (Optional) */
+	ArrearFee float64 `json:"arrearFee"`
 
-    /* 标签明细 (Optional) */
-    TagDetails []ResourceTagVo `json:"tagDetails"`
+	/* 标签明细 (Optional) */
+	TagDetails []ResourceTagVo `json:"tagDetails"`
 }
